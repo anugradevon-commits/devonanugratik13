@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuaca Interaktif</title>
+    <link rel="stylesheet" href="api.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2>Informasi Cuaca Interaktif</h2>
+        <select id="kotaSelect">
+            <option value="Bogor">Bogor</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Riau">Riau</option>
+            <option value="Kuansing">Kuansing</option>
+            <option value="Arab">Arab</option>
+        </select>
+
+        <div class="cuaca-card fade">
+            <img id="icon-cuaca" src="" alt="Ikon Cuaca">
+            <div class="cuaca-info">
+                <h3 id="kota">Kota</h3>
+                <p id="deskripsi">Deskripsi Cuaca</p>
+                <p id="suhu">Suhu</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="api.js"></script>
+</body>
+
+</html>

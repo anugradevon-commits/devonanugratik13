@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Luas Persegi Panjang</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function segi4() {
+            var panjang = parseFloat(document.fform.panjang1.value);
+            if (isNaN(panjang)) {
+                panjang = 0.0;
+            }
+
+            var lebar = parseFloat(document.fform.lebar1.value);
+            if (isNaN(lebar)) {
+                lebar = 0.0;
+            }
+
+            var luas = panjang * lebar;
+            alert("Hasil Luas = " + luas);
+        }
+    </script>
+
+    <form name="fform">
+        <h1>ALAT HITUNG LUAS</h1>
+        <pre>
+Panjang: <input type="text" size="11" name="panjang1">
+Lebar  : <input type="text" size="11" name="lebar1">
+    </pre>
+        <p>
+            <input type="button" value="Kalikan" onclick="segi4()">
+            <input type="reset" value="Ulang">
+        </p>
+    </form>
+</body>
+
+</html>

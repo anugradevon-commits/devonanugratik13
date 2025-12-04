@@ -1,0 +1,51 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 50px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cuaca-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+
+.cuaca-card img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.cuaca-info h3,
+.cuaca-info p {
+    margin: 0;
+    padding: 4px 0;
+}
+
+.fade {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
